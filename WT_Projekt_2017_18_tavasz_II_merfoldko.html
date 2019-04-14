@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Webtervezés 2018 - II. mérföldkő</title>
+    <style type="text/css">
+      body {
+        font-family: "Segoe UI",Arial,sans-serif;
+        background-color: #fcfcfc;
+        font-size:16px;
+        padding-bottom:50px;
+      }
+      table,td,th {
+        border-collapse: collapse;
+      }
+      th,td {
+        border: 1px solid #000000;
+        padding:5px;
+      }
+      table {
+        margin:10px;
+      }
+      td:first-child {
+        /*font-weight:bold;*/
+        vertical-align: top;
+      }
+      .stfill {
+        font-weight:bold;
+        color:#DD4132;
+      }
+      .sum {
+        border-top:2px solid #000000;
+      }
+      .sum td {
+        font-weight:bold;
+      }
+      .task {
+        /*font-weight:bold;*/
+      }
+      .subtask {
+        padding-left:25px;
+      }
+      .note {
+        font-size:12px;
+        display:block;
+      }
+      tr.sum>td:nth-child(2),
+      td:nth-child(3),
+      td:nth-child(4) {
+        text-align: center;
+      }
+      tr.header {
+        border-bottom: 2px solid #000000;
+      }
+      .example {
+        font-style: italic;
+        color:grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web tervezés - II. mérföldkő követelmények</h1>
+    <div>
+      <h2>Általános elvárások</h2>
+      <ul>
+        <li>Az elfogadáshoz egy XAMPP környezetben futó webalkalmazást (PHP) kell elkészíteni, melynek tükröznie kell az I. mérföldkőben megadott témát.</li>
+        <li>PHP keretrendszerek használatára nincs lehetőség.</li>
+        <li>A projekt megvalósítása során adatbázist nem lehet használni.</li>
+        <li>Az elkészített feladatot egy zip fájlban kell feltölteni CooSpace-re a követelményekben megfogalmazott határidőig.</li>
+        <li>A zip fájlnak tartalmaznia kell egy mappát, melynek neve a hallgató Neptun-kódja (kis betűvel). A projekt fájljait ebben kell elhelyezni.</li>
+        <li>Kicsomagolás után a projekt mappáját (Neptun-kóddal megegyező mappa név) a XAMPP htdocs mappájába másolva, mindenféle konfiguráció nélkül a weboldalnak működnie kell a <em>localhost/[neptun]</em> url-t megnyitva böngészőben, ahol az [neptun] a hallgató Neptun-kódját jelenti (szintén kis betűvel). (A portszámtól eltekintve.)</li>
+        <li>A fenti elvárások a pontozásban "Formai követelmények" néven szerepelnek.</li>
+        <li>A táblázatban dőlt betűkkel vannak jelölve azok a követelmények (7), amelyek javítására lehetőség van az értékelést követően.</li>
+        <li>Ezen dokumentumot kitöltve mellékelni kell a beadott zip fájlban.</li>
+        <li>Amennyiben az I. mérföldkő nem került beadásra, az I. mérföldő követelményeit tartalmazó HTML fájlt kitöltve is mellékelni kell.</li>
+        <li class="stfill">Beadás előtt ajánlott ellenőrizni a kabinetben, hogy működik-e, mert a nem működő megoldások nem kerülnek pontozásra!</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hallgató adatai</h2>
+      <ul>
+        <li>Név: <span class="stfill">Horváth Olivér Zoltán</span></li>
+        <li>Neptun-kód: <span class="stfill">E5IKV1</span></li>
+        <li>Szak, évfolyam: <span class="stfill">Programtervező Informatikus, I. évfolyam.</span></li>
+        <li>E-mail cím: <span class="stfill">h.oliver9112@gmail.com // h764073@stud.u-szeged.hu </span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Választott téma</h2>
+      <p>A választott téma rövid (5-10 mondat) összefoglalása:</p>
+      <p>
+         <span class="stfill">A választott témám egy edzőteremnek az online felülete, ahol egy funkció az, hogy online naplót lehet vezetni az edzésekről. Lényege az, hogy a gyakorlatokat 
+           rögzíteni lehet benne dátummal és mindennel ellátva, majd a gyakorlat nevére keresve lelehet kérni a rögzített bejegyzéseket, így jól nyomon követhető a fejlődés.
+           Ez egyben az oldalam kiemelt funkciója is, mely regisztrációhoz és belépéshez kötött, ellenkező esetben ezekről tájékoztat is megfelelően.
+         </span>
+      </p>
+      <p>
+        A projektnek kötelező jelleggel tartalmaznia kell fehasználókezelést. <br>
+        Kiemelt funkciók (legalább 3 darab a kötelezőkön kívül):
+      </p>
+      <ul>
+        <li><b>Felhasználó kezelés: regisztráció, belépés</b></li>
+        <span class="stfill">-online naplóba adat feltöltés, <br> -az adatok személyenkénti tárolása a szerveren, <br> -a felhasználó saját gyakorlatainak lekérdezése.</span>
+      </ul>
+    </div>
+    <div>
+      <h2>Pontozás</h2>
+      <p>
+        Ezt a részt az oktató tölti ki.
+      </p>
+      <table>
+        <tr class="header">
+          <th>
+
+          </th>
+          <th>
+            Részfeladat
+          </th>
+          <th>
+            Szerezhető pontszám
+          </th>
+          <th>
+            Szerzett pontszám
+          </th>
+          <th>
+            Megjegyzés
+          </th>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>
+            Formai követelmények
+          </td>
+          <td>3</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td class="task">
+            Szabványos dinamikusan generált HTML
+            <div class="note">Hibás oldalanként 1 pont levonás. Minimum 0 pont.</div>
+          </td>
+          <td>5</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            3
+          </td>
+          <td class="task" colspan="99">
+            Menü
+          </td>
+        </tr>
+        <tr>
+          <td>
+            3.1
+          </td>
+          <td class="subtask">
+              <a href="index.php"><b>Az éppen megnyitott menüpont ki van emelve</b></a>
+             <br>
+            -Ez a felső menüsoron látszik minden oldalon.
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            3.2
+          </td>
+          <td class="subtask">
+              <a href="index.php"><b>Hiba nélkül működő navigáció</b></a> <br>
+            -Indexet tudom ide is, működnie kéne :)
+
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            4
+          </td>
+          <td class="task" colspan="99">
+            Felhasználó kezelés
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4.1
+          </td>
+          <td class="subtask">
+            <a href="login.php"><b>Menetkövetés</b></a> <br>
+            -Minden oldalon belépve marad, kijelentkezésig.
+            <div class="note">Szabályos session használat.</div>
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            4.2
+          </td>
+          <td class="subtask">
+            
+            <a href="login.php"><b>Bejelentkezés</b></a> <br>
+            <div class="note">- hibás adatok esetén hibaüzenet</div>
+            <div class="note">- helyes adatok esetén működő bejelentkezés</div>
+            1.Emailt nézi, ha nincs nem fut tovább és kiírja hogy nem stimmel. <br>
+            2.Jelszót ellenőriz, ha nem passzol a létező reg.hez nem enged be és szól.
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            4.3
+          </td>
+          <td class="subtask">
+              <a href="workoutlog.php"><b>Belépett felhasználó ellenőrzése</b></a> <br>
+            <div class="note">Amennyiben egy nem belépett felhasználó olyan oldalt <br> nyit meg, amit csak belépett felhasználó tud elérni, <br> irányítson át a bejelentkezéshez.</div>
+            
+            -Note: Alapesetben meglehet nyitni az oldalt, viszont a két funkció két külön oldalon lett 
+            <br> megvalósítva, onnan 3sec delay-el fog átdobni a login oldalra, 
+            <br> így tájékoztatást is ír ki miért dob át. 
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            4.4
+          </td>
+          <td class="subtask">
+            <a href="index.php"><b>Kijelentkezés</b></a> <br>
+            -Minden oldalon el van helyezve a menüben balra.
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            5
+          </td>
+          <td class="task" colspan="99">
+            Regisztráció
+          </td>
+        </tr>
+        <tr>
+          <td>
+            5.1
+          </td>
+          <td class="subtask">
+            <a href="registrate.php"><b> Működő regisztráció</b></a> <br>
+            Működése: Egy email cím nevű txt filet csinál, belementve a megadott adatokat az első sorba. <br>
+            -Info:  Tájékoztat regisztráció után az adatokkal, <br>
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            5.2
+          </td>
+          <td class="subtask">
+            Űrlap ellenőrzés PHP oldalon <br>
+            <a href="registrate.php"><b> - nem kitöltött űrlap ellenőrzés</b></a> <br>
+            <a href="registrated.php"><b> - foglalt-e a felhasználónév</b></a> <br>
+            <a href="registrated.php"><b> - jelszó ismétlő mező ellenőrzés</b></a> <br>
+            Fontos: Két reg oldal van, egyiken a programozós része másik az alap oldal, ez valami bug miatt sikerült így. <br>
+            - Kitöltést requireddel megoldottam már a formban <br>
+            - Felhasználónevet megnézi, nem engedi ráregisztrálni. <br>
+            - Jelszavakat szintén egyeztet, erről a kettőről tájékoztat is.
+          </td>
+          <td>3</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            6
+          </td>
+          <td class="task" colspan="99">
+            PHP
+          </td>
+        </tr>
+        <tr>
+          <td>
+            6.1
+          </td>
+          <td class="subtask">
+            A szabad témaválasztás miatt a pontozás <br> a megvalósítás összetettsége alapján történik.
+            <div class="note">Pontot ér:</div>
+            <a href="lekeres.php"><b>- ciklus használat (max 2x): 1-3p</b></a> <br>            
+            <div class="note">- GET paraméter alapján adat megjelenítés: 1-3p</div>  <br> 
+            <a href="registrate.php"><b>- űrlapos adatkezelés megvalósítás (max 2x): 1-4p</b></a> <br> 
+            <a href="workoutlog.php"><b>- űrlapos adatkezelés megvalósítás (max 2x): 1-4p</b></a> <br>
+            (ket kulon urlapos oldal) <br>  <br> 
+            <a href="uploadform.php"><b>- kép feltöltés: 2-5p</b></a> <br> Ez egy includeoldt oldal, így csak sikeres bejelentkezéskor <br> fog megjelenni, a kód hozzá az upload.php fileban található. <br>
+            pelda login: h.oliver91@live.com psw: proba, egyedül itt lehet feltölteni belepes utan egybol. <br> <br>
+            
+            <a href="lekeres.php"><b>- összetett számítás: 1-2p</b></a> <br> <br>
+            <a href="registrate.php"><b>- fájlkezelés: 2-5p</b></a> <br>
+            Regisztráció fileba íródik, az "Online Napló" oldalon pedig adott fileba íródik bele a gyakorlat,<br> és a lekérdezés adott filebol a kért sorokat veszi ki. <br>
+            Ezek a kódok a : bevitel.php, lekeres.php, és registrated.php fileokban találhatóak.  <br>  <br> 
+            
+            <a href="lekeres.php"><b>- összetett adatok tárolása session-ben: 2-5p</b></a> <br>
+            (a gyakorlat es email van tarolva benne) <br> <br>
+            <a href="workoutlog.php"><b>- dátum kezelés: 1-2p</b></a> <br>
+            <a href="bevitel.php"><b>- string műveletek: 1-2p</b></a> <br> <br>
+            <a href="workoutlog.php"><b>- belépéshez kötött funkció: 1-2p</b></a> <br>
+            Amire átirányít, beviteli és lekérési oldal, onnan dob el delayyel ha nincs loggolva. <br>
+            Ezeknek azért van külön oldal, mert itt csak a lényeg van így könnyebb egymás után bejegyezni <br>
+            a gyakorlatokat, vagy lekérni őket. <br> <br>
+            <div class="note">- kivételkezelés: 1-2p</div>
+            <div class="note">- menetkövetés letiltott sütikkel is: 5p</div>
+          </td>
+          <td>24</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>
+            7
+          </td>
+          <td class="task">
+            <i>Megvalósítás minősége és átláthatósága</i>
+            <div class="note">Az alábbiakból lehet összeszedni:</div>
+            <div class="note">- objektum orientáltság használata: 1-4p</div> <br>
+            <a href="lekeres.php"><b>- függvények használata: 1-2p</b></a> <br>
+            isset, fgets, file_exists, strpos, empty <br> <br>
+            <a href="menu.php"><b>- kód ismétlések elkerülése: 1-2p</b></a> <br>
+            Ezt includeolom minden oldalon a menühöz.<br> <br> 
+            <div class="note">- logikusan, fájlokba szervezett kód: 1p</div> 
+            Ide gondolom nem nagyon lehet linkelni, megitélés kérdése az egészről. <br> <br>
+            <a href="mainstyle.css"><b>- CSS betöltése külön fájlból: 1p</b></a> <br>
+          </td>
+          <td>5</td><td></td><td></td>
+        </tr>
+        <tr class="sum">
+          <td colspan="2">Összpontszám:</td>
+          <td>50</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h2>Megjegyzés</h2>
+      <p>A hallgató opcionális megjegyzése a beadott feladathoz.</p>
+      <p>
+         <span class="stfill">Úgy gondolom sikerült egy gyakorlatban is jól használható oldalt írni, <br>
+           pár ismerős már mondta hogy majd kipróbálja illetve én is szoktam edzeni, így örülök hogy meg kellett csinálni :) </span>
+      </p>
+    </div>
+    <p> Közzétéve: 2018. 03. 12. </p>
+  </body>
+</html>

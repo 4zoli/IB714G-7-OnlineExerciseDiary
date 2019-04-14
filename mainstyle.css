@@ -1,0 +1,122 @@
+.menu   {   /* Menubár */
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    text-align: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    font-size: 1vw;
+}
+
+.menu a {           /* Menu linkjei */
+    color: white;
+    padding: 2vw;    /* linkek széthúzása */ 
+    text-decoration: none; /* nincs aláhúzás */
+    text-align: center;   
+}
+
+.menu a:hover   {   /* Egér rávitel */
+    background: #1aff1a;
+    color: black;
+    border-radius: 15vh 100vw;
+}
+
+#logged {
+    position: absolute;
+    float: left;
+    color: white;
+}
+
+#logout {
+    position: absolute;
+    color: white;
+}
+#logout a:hover {
+    background-color: rgba(229, 255, 0, 0);
+    color: #1aff1a;
+}
+
+#active {           /* Aktív link formázás, azaz jelenlegi oldal tab */
+    background: #f6f6f6;
+    color: black;
+    border-radius: 0px 60px;
+}
+
+body    {
+    Background-image: url(images/background.png);
+}
+
+
+main   {
+    font-size: 2vh;
+    border-radius: 15px 10vh;
+    margin: auto;
+    width: 90vw;
+    margin-top: 13vh;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+}
+                    /*Egyedi osztályok, azonosítók */
+#img {
+    width: 30vw;
+    height: 50vh;
+}
+.leftfloat  {
+    float: left;
+}
+
+.rightfloat  {
+    float: right;
+}
+
+#leftpull     {
+    margin-left: 3vw
+}
+
+#center {
+    text-align: center;
+}
+
+#right  {
+    text-align: right;
+}
+
+table {
+    border-collapse: collapse;
+}
+                    /* Árnyékolások */
+.gt_shadow {
+    text-shadow: 1px 1px #1aff1a;
+}
+
+.gb_shadow    {
+    box-shadow: 4px 4px 4px rgba(98, 233, 8, 0.9);
+}
+
+.bt_shadow  {
+    text-shadow: 1px 1px blue;
+}
+
+.bb_shadow   {
+    box-shadow: 4px 4px 4px rgba(0, 4, 255, 0.9);
+}
+
+.rt_shadow    {
+    text-shadow: 1px 1px red;
+}
+
+.rb_shadow    {
+    box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.9);
+}
+
+.yt_shadow    {
+    text-shadow: 1px 1px yellow;
+}
+
+.yb_shadow   {
+    box-shadow: 4px 4px 4px rgba(229, 255, 0, 0.9);
+}
